@@ -33,6 +33,7 @@ attr_accessor :path
 
       if user_input = "list songs"
         list_songs
+        binding.pry
       elsif user_input = "list artists"
          list_artists
        elsif user_input = "list genres"
