@@ -30,23 +30,22 @@ attr_accessor :path
       puts "What would you like to do?"
 
       user_input = gets.strip
-      case user_input
 
-      if user_input = "list songs"
-        list_songs
-      elsif user_input = "list artists"
-         list_artists
-       elsif user_input = "list genres"
-         list_genres
-       elsif user_input = "list artist"
-         list_artist
-       elsif user_input = "list genre"
-        list_genre
-       elsif user_input = "play song"
-         play_song
-       else
-         puts "What would you like to do?"
-       end
+        if user_input = "list songs"
+          list_songs
+        elsif user_input = "list artists"
+           list_artists
+         elsif user_input = "list genres"
+           list_genres
+         elsif user_input = "list artist"
+           list_artist
+         elsif user_input = "list genre"
+          list_genre
+         elsif user_input = "play song"
+           play_song
+         else
+           puts "What would you like to do?"
+         end
 
     end
 
