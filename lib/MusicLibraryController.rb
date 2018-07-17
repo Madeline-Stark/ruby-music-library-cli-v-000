@@ -17,6 +17,7 @@ attr_accessor :path
   def call
     user_input = ""
     while user_input != "exit"
+      binding.pry
 
       puts "Welcome to your music library!"
 
@@ -33,7 +34,6 @@ attr_accessor :path
 
       if user_input = "list songs"
         list_songs
-        binding.pry
       elsif user_input = "list artists"
          list_artists
        elsif user_input = "list genres"
