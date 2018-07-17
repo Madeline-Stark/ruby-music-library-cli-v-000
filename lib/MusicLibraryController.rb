@@ -17,7 +17,6 @@ attr_accessor :path
   def call
     user_input = ""
     while user_input != "exit"
-      binding.pry
 
       puts "Welcome to your music library!"
 
