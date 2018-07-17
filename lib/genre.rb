@@ -1,4 +1,3 @@
-#require_relative '../lib/concerns/findable.rb'
 
 class Genre
   extend Concerns::Findable
@@ -9,7 +8,6 @@ class Genre
   def initialize(name)
     @name = name
     @songs = []
-    #save
   end
 
   def self.all
@@ -27,7 +25,6 @@ class Genre
   def self.create(name)
     new_genre = Genre.new(name)
     new_genre.save
-    #binding.pry
     new_genre
   end
 
