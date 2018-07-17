@@ -31,17 +31,17 @@ attr_accessor :path
 
       user_input = gets.strip
 
-        if user_input = "list songs"
+        if user_input == "list songs"
           list_songs
-        elsif user_input = "list artists"
+        elsif user_input == "list artists"
            list_artists
-         elsif user_input = "list genres"
+         elsif user_input == "list genres"
            list_genres
-         elsif user_input = "list artist"
+         elsif user_input == "list artist"
            list_artist
-         elsif user_input = "list genre"
+         elsif user_input == "list genre"
           list_genre
-         elsif user_input = "play song"
+        elsif user_input == "play song"
            play_song
          else
            puts "What would you like to do?"
